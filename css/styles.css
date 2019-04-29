@@ -9,3 +9,104 @@ body {
   background: #DEF2F1;
 }
 
+h1 {
+	float: left;
+	margin: 20px;
+	font-weight: bold;
+	line-height: 40px;
+}
+
+.menu-btn {
+	float: right;
+	width: 20%;
+	background: #DEF2F1;
+	color: #17252A;
+	text-align: center;
+	line-height: 40px;
+	height: 40px;
+	border-radius: 50px;
+	margin: 20px;
+}
+
+.logo-bar {
+ 	font-family: 'Oswald', sans-serif;
+	background: #17252A;
+	color: #FEFFFF;
+	width: 100%;
+	height: 80px;
+}
+
+span {
+	color: #DEF2F1;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.descrip {
+	width: 100%;
+	background: #FEFFFF;
+	height: 40px;
+	align-items: center;
+	text-align: center;
+	line-height: 40px;
+	margin-bottom: 10px;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.articles {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+
+.info-block {
+	margin: 10px 0;
+	color: #FEFFFF;
+	border-radius: 10px;
+}
+
+.art-title, .art-des {
+	margin: 10px 20px;
+}
+
+.art-title {
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.art-des {
+	font-size: 18px;
+	font-style: italic;
+	text-overflow: ellipsis;
+}
+
+.c1 {
+	background: #3AAFA9;
+}
+
+.c2 {
+	background: #2B7A78;
+}
+
+.c3 {
+	background: #349A95;
+}
+
+@media screen and (min-width: 768px) {
+	.articles {
+		grid-template-columns: 50% 50%;
+	}
+
+	.info-block {
+		margin: 10px;
+	}
+}
